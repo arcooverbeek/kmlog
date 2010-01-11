@@ -1,0 +1,24 @@
+<h1>Listing locations</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Distanceto denhaag</th>
+    <th>Distanceto zoetemeer</th>
+  </tr>
+
+<% @locations.each do |location| %>
+  <tr>
+    <td><%=h location.name %></td>
+    <td><%=h location.distanceto_denhaag %></td>
+    <td><%=h location.distanceto_zoetemeer %></td>
+    <td><%= link_to 'Show', location %></td>
+    <td><%= link_to 'Edit', edit_location_path(location) %></td>
+    <td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New location', new_location_path %>

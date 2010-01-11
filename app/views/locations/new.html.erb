@@ -1,0 +1,23 @@
+<h1>New location</h1>
+
+<% form_for(@location) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :distanceto_denhaag %><br />
+    <%= f.text_field :distanceto_denhaag %>
+  </p>
+  <p>
+    <%= f.label :distanceto_zoetemeer %><br />
+    <%= f.text_field :distanceto_zoetemeer %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', locations_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  distanceto_denhaag: 1.5
+  distanceto_zoetemeer: 1.5
+
+two:
+  name: MyString
+  distanceto_denhaag: 1.5
+  distanceto_zoetemeer: 1.5
